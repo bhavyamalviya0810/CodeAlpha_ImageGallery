@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Image Gallery</h1>
+    <p>A curated collection of stunning visuals</p>
+  </header>
+
+  <nav class="filter-bar" aria-label="Category filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="technology">Technology</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+    <button class="filter-btn" data-category="travel">Travel</button>
+  </nav>
+
+  <main class="gallery" id="gallery" role="region" aria-label="Image gallery"></main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&lsaquo;</button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&rsaquo;</button>
+      <figure class="lightbox-figure">
+        <img class="lightbox-image" id="lightboxImage" src="" alt="">
+        <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
